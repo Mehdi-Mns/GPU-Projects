@@ -13,7 +13,7 @@ Grâce à ce projet, j'ai appris à utiliser les fonctions GPU pour parallélise
    Visualisation mathématique des fractales, calculée et rendue en parallèle sur GPU et CPU.
 
 2. **Ray Tracing** 
-   Rendu 3D avec effets lumineux réalistes, exploitant le parallélisme pour accélérer le calcul des rayons et des ombres.
+   Rendu 3D avec effets lumineux, exploitant le parallélisme pour accélérer le calcul des rayons et des ombres.
 
 3. **Jeu de la vie (Game of Life)** 
    Simulation de systèmes complexes avec règles locales appliquées en parallèle sur une grille de cellules.
@@ -28,7 +28,7 @@ Grâce à ce projet, j'ai appris à utiliser les fonctions GPU pour parallélise
 
 - Maîtriser les calculs parallèles sur GPU avec CUDA.  
 - Comprendre les différences de performances entre CPU et GPU.  
-- Appliquer les calculs parallèles à la génération d’objets 3D, au rendu réaliste et à la simulation de systèmes complexes. ✨  
+- Appliquer les calculs parallèles à la génération d’objets 3D, au rendu réaliste et à la simulation de systèmes complexes.
 - Développer des compétences en visualisation graphique avec OpenGL.
 
 ## Résultats
@@ -57,7 +57,7 @@ Les visualisations en temps réel démontrent l’efficacité du parallélisme G
 
 1. **Cloner le dépôt**  
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/Mehdi-Mns/GPU-Projects/
    ```
 
 2. **Ouvrir la solution dans Visual Studio**  
@@ -78,8 +78,8 @@ Les visualisations en temps réel démontrent l’efficacité du parallélisme G
    - Une fois installé, vérifier que les projets sont bien liés à la version du toolkit installé:
      - **Répertoires VC ++** : pour chaque projet, vérifier ou ajouter les includes dans **Répertoires Include** : `C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\{version}\include\`.
      - **.vcxproj** : pour chaque ptojet, ouvrir dans un éditeur et vérifier/modifier le numéro de version:
-         - <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA {version}.props" />
-         - <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA {version}.targets" />
+         - Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA {version}.props"
+         - Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA {version}.targets"
 
 5. **DLL**  
    - Copiez les fichiers `*.dll` requis dans :  
@@ -94,7 +94,8 @@ Les visualisations en temps réel démontrent l’efficacité du parallélisme G
 ## Contrôles / Inputs
 
 ### Julia Set
-- **Flèches directionnelles** : déplacer la vue dans la fractale  
+- **Flèches directionnelles** : déplacer la vue dans la fractale
+- **1 / 2** : basculer entre mode CPU et GPU  
 - **+ / -** : zoomer / dézoomer  
 - **S** : sauvegarder l’image rendue  
 - **Esc** : quitter  
@@ -113,7 +114,8 @@ Les visualisations en temps réel démontrent l’efficacité du parallélisme G
 
 ### Jeu de la vie
 - **Espace** : démarrer / arrêter la simulation  
-- **Flèches directionnelles** : déplacer la grille  
+- **Flèches directionnelles** : déplacer la grille
+- **1 / 2** : basculer entre mode CPU et GPU  
 - **+ / -** : augmenter ou diminuer la vitesse d’évolution  
 - **Esc** : quitter  
 
